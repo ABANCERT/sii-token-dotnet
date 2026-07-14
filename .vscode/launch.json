@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TokenSII (interactivo)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/TokenSII/bin/Debug/net10.0/TokenSII.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/TokenSII",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    },
+    {
+      "name": "TokenSII (PFX · certificación)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/TokenSII/bin/Debug/net10.0/TokenSII.dll",
+      "args": ["--pfx", "C:\\ruta\\a\\tu-certificado.pfx", "--clave", "TU_CLAVE"],
+      "cwd": "${workspaceFolder}/TokenSII",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    },
+    {
+      "name": "TokenSII (almacén Windows · producción)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/TokenSII/bin/Debug/net10.0/TokenSII.dll",
+      "args": ["--almacen", "--prod"],
+      "cwd": "${workspaceFolder}/TokenSII",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

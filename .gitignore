@@ -1,0 +1,50 @@
+# Salidas de compilación .NET
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+
+# Visual Studio (se deja atrás en favor de VS Code)
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+
+# VS Code: se versiona la configuración compartida del proyecto y se ignora lo demás
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Varios
+*.log
+[Tt]humbs.db
+.DS_Store
+
+# Certificados y secretos: NUNCA versionar
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+*.jks
+*.keystore
+appsettings.*.local.json
+secrets.json
+
+# Claude Code: configuración personal (no compartida)
+.claude/settings.local.json

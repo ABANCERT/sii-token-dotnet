@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "ABANCERT-SII",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "dotnet.defaultSolution": "disable",
+    "files.exclude": {
+      "**/bin": true,
+      "**/obj": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-dotnettools.csharp",
+      "ms-dotnettools.csdevkit"
+    ]
+  }
+}

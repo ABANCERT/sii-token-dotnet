@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>TokenSII</RootNamespace>
+    <AssemblyName>TokenSII</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <!-- Identidad del proyecto - ABANCERT -->
+  <PropertyGroup>
+    <Product>TokenSII</Product>
+    <Company>ABANCERT</Company>
+    <Authors>ABANCERT</Authors>
+    <Version>1.0.0</Version>
+    <Copyright>© ABANCERT — https://www.abancert.cl</Copyright>
+    <Description>Autenticación con el SII de Chile (semilla, firma y token), por ABANCERT. Compatible con certificados digitales de Firma Electrónica Simple para facturación electrónica: https://www.abancert.cl/solicitud/certificado-digital-simple</Description>
+    <PackageProjectUrl>https://www.abancert.cl</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ABANCERT/ABANCERT-SII</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>SII;Chile;DTE;factura-electronica;certificado-digital;firma-electronica;token;ABANCERT</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SignedXml no forma parte del framework compartido de .NET; se agrega como paquete
+         (versión parchada, alineada con el runtime .NET 10). -->
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="10.0.9" />
+  </ItemGroup>
+
+</Project>
